@@ -14,5 +14,16 @@ body {
 }
 input {
 	margin-left:5px;
-	margin-right:5px;
+}
+button {
+	margin-left:10px;
+}
+#items{
+	display:flex;
+	flex-direction:column;
+}
+li{
+	display:flex;
+	justify-content:center;
+	flex-direction:row;
 }
