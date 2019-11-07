@@ -1,0 +1,9 @@
+.title {
+	font-size:72px;
+	font-weight:bold;
+	text-align:center;
+}
+.insert{
+	display:flex;
+	justify-content:center;
+}
