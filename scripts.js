@@ -4,15 +4,17 @@ var n_items = 0;
 
 function addItem(name){
 	newItem = document.createElement("li");
-	newItem.innerHTML = "<div id='" + n_items + "'>" + name + "</div";
+	name = document.getElementById("imput").value;
+	document.getElementById("imput").value ="";
+	newItem.innerHTML = "<div id='" + n_items + "'>• " + name + "</div";
 	button = document.createElement("button");
 	button.innerHTML = "Delete";
+	button.id = "delete";
 	newItem.appendChild(button);
-	button = addEventListener('click', () => {
-		item = document.getElementById(id);
-		item.remove();
-	});
-	var id = n_items + "_id";
 	items.appendChild(newItem);
 	n_items++;
+	button.onclick = function() {
+		var div = this.parentElement;
+		div.style.display = "none";
+	}
 }

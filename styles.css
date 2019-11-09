@@ -22,8 +22,16 @@ button {
 	display:flex;
 	flex-direction:column;
 }
-li{
-	display:flex;
+ul {
+	/* text-align:center; */
+	display:inline-flex;
 	justify-content:center;
+	flex-direction:column;
+	flex:1;
+}
+li{
+	/* FIXME */
+	display:flex;
+	/* justify-content:center; */
 	flex-direction:row;
 }
