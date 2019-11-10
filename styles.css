@@ -25,14 +25,10 @@ button {
 	flex-direction:column;
 }
 ul {
-	/* text-align:center; */
-	/* display:flex; */
 	align-items:center;
-	/* flex-direction:column; */
 	flex:1;
 }
 li{
-	/* FIXME */
 	display:flex;
 	justify-content:center;
 	flex-direction:row;
