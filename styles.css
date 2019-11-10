@@ -2,7 +2,7 @@ body {
 	font-family: Arial, sans-serif;
 }
 #title {
-	font-size:48px;
+	font-size:45px;
 	font-weight:bold;
 	text-align:center;
 	margin-bottom:30px;
@@ -25,12 +25,11 @@ button {
 	flex-direction:column;
 }
 ul {
-	align-items:center;
 	flex:1;
 }
 li{
 	display:flex;
-	justify-content:center;
+	margin-left: 40%;
 	flex-direction:row;
 	margin-bottom:15px;
 }
