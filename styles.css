@@ -17,6 +17,8 @@ input {
 }
 button {
 	margin-left:10px;
+	border-radius:5px;
+	background-color:#FFF;
 }
 #items{
 	display:flex;
@@ -24,14 +26,15 @@ button {
 }
 ul {
 	/* text-align:center; */
-	display:inline-flex;
-	justify-content:center;
-	flex-direction:column;
+	/* display:flex; */
+	align-items:center;
+	/* flex-direction:column; */
 	flex:1;
 }
 li{
 	/* FIXME */
 	display:flex;
-	/* justify-content:center; */
+	justify-content:center;
 	flex-direction:row;
+	margin-bottom:15px;
 }

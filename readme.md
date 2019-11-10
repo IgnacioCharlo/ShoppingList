@@ -1,4 +1,5 @@
 # Por terminar
 
-- Contador en titulo
-- Arreglar css para la lista
+- [X] Contador en titulo
+- [X] Arreglar css para la lista
+- [X] No crear elementos vacios
