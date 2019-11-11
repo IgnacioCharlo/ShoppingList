@@ -5,5 +5,5 @@
 - [X] No crear elementos vacios
 - [ ] Mejorar centrado
 - [ ] Cambiar task3 por task4
-- [ ] Hacer que el primer ENTER funcione
+- [X] Hacer que el primer ENTER funcione
       (solo funciona despues de haberle dado alguna vez al boton "Add item")
