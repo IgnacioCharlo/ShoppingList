@@ -3,6 +3,12 @@ var items = document.getElementById("items");
 var n_items = 0;
 
 function addItem(name){
+
+	document.getElementById("imput").onkeypress = function(event){
+		if (event.keyCode == 13){
+			addItem();
+		}
+	};
 	newItem = document.createElement("li");
 	name = document.getElementById("imput").value;
 	if(name!==""){
