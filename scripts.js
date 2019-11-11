@@ -8,18 +8,16 @@ document.getElementById("imput").onkeypress = function(event){
 	}
 };
 
-function addItem(name){
+function updateTitle(){
+	title.innerHTML = "My shopping list (" + n_items + (n_items==1? " item":" items") + ")";
+}
 
-	// document.getElementById("imput").onkeypress = function(event){
-	// 	if (event.keyCode == 13){
-	// 		addItem();
-	// 	}
-	// };
+function addItem(){
 	newItem = document.createElement("li");
 	name = document.getElementById("imput").value;
 	if(name!==""){
 		document.getElementById("imput").value ="";
-		newItem.innerHTML = "<div id='" + n_items + "'>• " + name + "</div";
+		newItem.innerHTML = "<span id='" + n_items + "'>• " + name + "</div";
 		button = document.createElement("button");
 		button.innerHTML = "Delete";
 		button.id = "delete";
@@ -30,9 +28,10 @@ function addItem(name){
 			var div = this.parentElement;
 			div.remove();
 			n_items--;
-			title.innerHTML = "My shopping list (" + n_items + (n_items==1? " item":" items") + ")";
+			updateTitle();
 		}
 		title = document.getElementById("title")
 		title.innerHTML = "My shopping list (" + n_items + (n_items==1? " item":" items") + ")";
+			updateTitle();
 	}
 }
