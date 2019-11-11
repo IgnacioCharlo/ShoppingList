@@ -16,7 +16,9 @@ function addItem(name){
 		n_items++;
 		button.onclick = function() {
 			var div = this.parentElement;
-			div.style.display = "none";
+			div.remove();
+			n_items--;
+			title.innerHTML = "My shopping list (" + n_items + (n_items==1? " item":" items") + ")";
 		}
 		title = document.getElementById("title")
 		title.innerHTML = "My shopping list (" + n_items + (n_items==1? " item":" items") + ")";
