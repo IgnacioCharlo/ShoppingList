@@ -44,6 +44,6 @@ function addItem(){
 		}
 		title = document.getElementById("title")
 		title.innerHTML = "My shopping list (" + n_items + (n_items==1? " item":" items") + ")";
-			updateTitle();
+		updateTitle();
 	}
 }
